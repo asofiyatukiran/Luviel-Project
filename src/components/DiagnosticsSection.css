@@ -1,0 +1,89 @@
+/* ✅ Main container - Side by side layout */
+.diagnostics-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse; /* Flip the order */
+    padding: 100px;
+    background-color: #ffffff;
+}
+
+
+  /* ✅ Left Side: Text Content */
+  .diagnostics-content {
+    flex: 1;
+    max-width: 45%;
+  }
+  
+  .diagnostics-content h1 {
+    font-size: 48px;
+    font-family: "Zesta", serif;
+    font-weight: 500;
+    color: #000;
+  }
+  
+  .diagnostics-content p {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0 20px;
+  }
+  
+  .diagnostics-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .diagnostics-content li {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  /* ✅ QR Code Section */
+  .qr-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .qr-section img {
+    width: 90px;
+    height: 90px;
+  }
+  
+  /* ✅ Right Side: iPhone Image */
+  .diagnostics-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 45%;
+  }
+  
+  .diagnostics-image img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+  
+  /* 🔥 Responsive Design (For smaller screens) */
+  @media (max-width: 1024px) {
+    .diagnostics-container {
+      flex-direction: column;
+      text-align: center;
+      padding: 40px;
+    }
+  
+    .diagnostics-content, .diagnostics-image {
+      max-width: 100%;
+    }
+  
+    .diagnostics-image {
+      margin-top: 30px;
+    }
+  
+    .qr-section {
+      justify-content: center;
+    }
+  }
+  

@@ -42,3 +42,25 @@
   color: #fff;
   font-size: 100px;
 }
+
+@font-face {
+  font-family: 'Mazzard';
+  src: url('/fonts/Mazzard.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Zesta';
+  src: url('/fonts/Zesta.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Mazzard', sans-serif; /* Set default font */
+}
+
+h1, h2, h3 {
+  font-family: 'Zesta', serif; /* Use Zesta for headings */
+}
